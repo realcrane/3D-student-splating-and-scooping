@@ -1,0 +1,9 @@
+{
+    "cap_max": 600000,
+    "nu_degree": 100,
+    "opacity_reg": 0.005,
+    "C_burnin": 5e5,
+    "C": 1e2,
+    "burnin_iterations": 7000,
+    "iterations": 30000
+}
