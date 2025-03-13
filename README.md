@@ -7,7 +7,7 @@ Official Implementation of paper "3D Student Splatting and Scooping", CVPR 2025.
 [Feixiang He](https://scholar.google.com/citations?user=E12uw1sAAAAJ&hl=en)<sup>1</sup>
 [He Wang](https://drhewang.com/)<sup>3†</sup>
 
-<small><sup>1</sup>University College London, UK, <sup>2</sup>University of Leeds, UK<sup>3</sup>AI Centre, University College London, UK
+<small><sup>1</sup>University College London, UK, <sup>2</sup>University of Leeds, UK, <sup>3</sup>AI Centre, University College London, UK
 
 <sup>*</sup> Work done while at UCL, <sup>†</sup> Corresponding author- he_wang@ucl.ac.uk
 
@@ -18,7 +18,7 @@ Official Implementation of paper "3D Student Splatting and Scooping", CVPR 2025.
 
 This project is built on top of the [vanilla 3DGS code repository](https://github.com/graphdeco-inria/gaussian-splatting) and [3DGS-MCMC code repository](https://github.com/ubc-vision/3dgs-mcmc).
 
-We have tested the code with 1 NVIDIA RTX 4090 GPU on Ubuntu system and WSL Ubuntu.
+We have tested the code with 1 NVIDIA RTX 4090 GPU (CUDA 11.7) on Ubuntu system and WSL Ubuntu.
 
 ## Setup
 
