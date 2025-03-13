@@ -11,20 +11,18 @@ Official Implementation of paper "3D Student Splatting and Scooping", CVPR 2025.
 
 <sup>*</sup> Work done while at UCL, <sup>†</sup> Corresponding author- he_wang@ucl.ac.uk
 
-[Paper]()|[BibTeX](#bib)
+[CVPR Papar (Coming soon)]()|[Arxiv Paper]()|[BibTeX](#bib)
 ---
 
 ## Declaration
 
 This project is built on top of the [vanilla 3DGS code repository](https://github.com/graphdeco-inria/gaussian-splatting) and [3DGS-MCMC code repository](https://github.com/ubc-vision/3dgs-mcmc).
 
-1 NVIDIA RTX 4090 GPU is required
-
-We have tested the code with on Ubuntu system and WSL Ubuntu.
+We have tested the code with 1 NVIDIA RTX 4090 GPU on Ubuntu system and WSL Ubuntu.
 
 ## Setup
 
-There are many ways to build a 3DGS environment, and this is the most convenient one we have found. It is also suitable for servers without admin rights.
+This is one of the most convenient way we have found for 3DGS environment configuration. It is also suitable for machines without admin rights.
 
 ### Installation steps
 
@@ -91,15 +89,15 @@ New important parameters are:
 `--burnin_iterations`: total iteration number for burnin stage.
 
 ### Visualization
-The [vanilla 3DGS.](https://github.com/graphdeco-inria/gaussian-splatting) developed a viewing program with SIBR framework. Since we change the Gaussian distribution to Student's t distribution, the viewer cannot be directly applied with our SSS. We will write a visualization tool in the future if we have time.
+The [vanilla 3DGS](https://github.com/graphdeco-inria/gaussian-splatting) developed a viewing program with SIBR framework. Since we change the Gaussian distribution to Student's t distribution, the viewer cannot be directly applied with our SSS. We will write a visualization tool in the future if we have time.
 
 
 ## Notes
-The parameters we provide can achieve SOTA results on three commonly used datasets (Mip-NeRF 360, Tanks&Temples, and Deep Blending). If you want to continue tuning parameters (which is possible as we are limited by time for parameters finetuing) or find parameters for your own dataset, please pay attention to the following.
+The parameters we provide can achieve SOTA results on three commonly used datasets (Mip-NeRF 360, Tanks&Temples, and Deep Blending). If you want to continue tuning parameters (which is possible as we are limited by time for parameters finetuing) or find parameters for your own dataset, please pay attention to the following context.
 
-Because SGHMC is a second-order sampler, the setting of learning rate is different from Adam (first-order). If you need to adjust the learning rate, please refer to the training code for a full understudying.
+Because SGHMC is a second-order sampler, the setting of learning rate is different from Adam (first-order). The square of the initial learning rate is the actual learning rate. If you need to adjust the learning rate, please refer to the training code for a full understudying.
 
-The C_burnin and C used by our SGHMC sampler are also parameters that are strongly correlated with the results. We save the total noise calculated by C_burnin and C in tensorboard for observation. In theory, the larger its mean value is (without causing numerical issue like inf, NaN), the better it is。
+The C_burnin and C used by our SGHMC sampler are also parameters that are strongly correlated with the results. We save the total noise calculated by C_burnin and C in Tensorboard for observation. In theory, the larger its mean value is (without causing numerical issue like inf, NaN), the better it is。
 
 
 ## <span id="bib">BibTex</span>
@@ -108,7 +106,7 @@ If you find our paper/project useful, please consider citing our paper:
 @article{zhu2025sss,
   title={3D Student Splatting and Scooping},
   author={Zhu, jialin and Yue, Jiangbei and He, Feixiang and Wang, He},
-  journal={CVPR},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2025}
 }
 ```
