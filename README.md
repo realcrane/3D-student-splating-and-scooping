@@ -11,7 +11,7 @@ Official Implementation of paper "3D Student Splatting and Scooping", CVPR 2025.
 
 <sup>*</sup> Work done while at UCL, <sup>†</sup> Corresponding author- he_wang@ucl.ac.uk
 
-[CVPR Papar (Coming soon)]()|[Arxiv Paper]()|[BibTeX](#bib)
+[CVPR Papar (Coming soon)]()|[Arxiv Paper](https://arxiv.org/abs/2503.10148)|[BibTeX](#bib)
 ---
 
 ## Declaration
@@ -103,10 +103,13 @@ The C_burnin and C used by our SGHMC sampler are also parameters that are strong
 ## <span id="bib">BibTex</span>
 If you find our paper/project useful, please consider citing our paper:
 ```bibtex
-@article{zhu2025sss,
-  title={3D Student Splatting and Scooping},
-  author={Zhu, jialin and Yue, Jiangbei and He, Feixiang and Wang, He},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2025}
+@misc{zhu20253dstudentsplattingscooping,
+      title={3D Student Splatting and Scooping}, 
+      author={Jialin Zhu and Jiangbei Yue and Feixiang He and He Wang},
+      year={2025},
+      eprint={2503.10148},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.10148}, 
 }
 ```
