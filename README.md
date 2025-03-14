@@ -106,10 +106,8 @@ If you find our paper/project useful, please consider citing our paper:
 @misc{zhu20253dstudentsplattingscooping,
       title={3D Student Splatting and Scooping}, 
       author={Jialin Zhu and Jiangbei Yue and Feixiang He and He Wang},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
       year={2025},
-      eprint={2503.10148},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.10148}, 
+      url={https://arxiv.org/abs/2503.10148}
 }
 ```
