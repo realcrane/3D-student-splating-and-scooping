@@ -1,6 +1,6 @@
 # 3D Student Splatting and Scooping
 
-Official Implementation of paper "3D Student Splatting and Scooping", an Oral paper in CVPR 2025.
+Official Implementation of "3D Student Splatting and Scooping", an **Oral** paper in **CVPR 2025**.
 
 [Jialin Zhu](https://jialin.info)<sup>1*</sup>,
 [Jiangbei Yue](https://scholar.google.com/citations?user=hWnY-fMAAAAJ&hl=en)<sup>2</sup>
@@ -13,6 +13,14 @@ Official Implementation of paper "3D Student Splatting and Scooping", an Oral pa
 
 [CVPR Papar (Coming soon)]()|[Arxiv Paper](https://arxiv.org/abs/2503.10148)|[BibTeX](#bib)
 ---
+
+## Summary
+**SSS** (Student Splatting and Scooping) is a new (unnormalized) mixture model for 3D reconstruction by improving the fundamental paradigm and formulation of [3DGS](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+
+Core ideas in **SSS**:
+1. Student's t distribution with flexible control of tail fatness for better rendering quality.
+2. Negative components in (unnormalized) mixture model for introducing nagative densities in 3D spatial space.
+3. SGHMC (Stochastic Gradient Hamiltonian Monte Carlo) sampler for training.
 
 ## Declaration
 
