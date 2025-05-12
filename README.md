@@ -19,7 +19,7 @@ Official Implementation of "3D Student Splatting and Scooping", an **Oral** pape
 
 Core ideas in **SSS**:
 1. Student's t distribution with flexible control of tail fatness for better rendering quality.
-2. Negative components in (unnormalized) mixture model for introducing nagative densities in 3D spatial space.
+2. Negative components in (unnormalized) mixture model for introducing negative densities in 3D spatial space.
 3. SGHMC (Stochastic Gradient Hamiltonian Monte Carlo) sampler for training.
 
 ## Declaration
