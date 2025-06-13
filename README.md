@@ -80,9 +80,9 @@ Most of the training and testing parameters can refer to [vanilla 3DGS.](https:/
 
 New important parameters are:
 
-`--nu_degree`: initial value of nu (degree of freedom)
+`--nu_degree`: initial value of $\nu$ (degree of freedom)
 
-`--degree_lr`: learning rate of nu (degree of freedom)
+`--degree_lr`: learning rate of $\nu$ (degree of freedom)
 
 `--cap_max`: maximum components number
 
@@ -103,9 +103,9 @@ The [vanilla 3DGS](https://github.com/graphdeco-inria/gaussian-splatting) develo
 ## Notes
 The parameters we provide can achieve SOTA results on three commonly used datasets (Mip-NeRF 360, Tanks&Temples, and Deep Blending). If you want to continue tuning parameters (which is possible as we are limited by time for parameters finetuing) or find parameters for your own dataset, please pay attention to the following context.
 
-Because SGHMC is a second-order sampler, the setting of learning rate is different from Adam (first-order). The square of the initial learning rate is the actual learning rate. If you need to adjust the learning rate, please refer to the training code for a full understudying.
+Because SGHMC is a second-order sampler, the setting of learning rate is different from Adam (first-order). The square of the initial learning rate is the actual learning rate. If you need to adjust the learning rate, please refer to the training code for a full understanding.
 
-The C_burnin and C used by our SGHMC sampler are also parameters that are strongly correlated with the results. We save the total noise calculated by C_burnin and C in Tensorboard for observation. In theory, the larger its mean value is (without causing numerical issue like inf, NaN), the better it is。
+The C_burnin and C used by our SGHMC sampler are also parameters that are strongly correlated with the results. We save the total noise calculated by C_burnin and C in Tensorboard for observation. In theory, the larger its mean value is (without causing numerical issue like inf, NaN), the better it is. However, be aware that a large value may cause numerical issues (inf, NaN), so the right value needs to be found for different scenarios by attempts.
 
 
 ## <span id="bib">BibTex</span>
